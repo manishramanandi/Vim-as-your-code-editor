@@ -1,0 +1,48 @@
+****************************************************************
+****************************************************************
+**                                                           ***
+**  *                  *  *****************  **          **  ***
+**   *                *           *          * *        * *  ***
+**    *              *            *          *  *      *  *  ***
+**     *            *             *          *   *    *   *  ***
+**      *          *              *          *    *  *    *  ***
+**       *        *               *          *     **     *  ***
+**        *      *                *          *            *  ***
+**         *    *                 *          *            *  ***
+**          *  *                  *          *            *  ***
+**           **           *****************  *            *  ***
+**                                                           ***
+****************************************************************
+****************************************************************
+Opening and Closing FIles
+
+Remeber that you are always working on a copy of yout file in the buffer, and that your
+edits do not affect your original files until you save the buffer.Saving your edits is also called "Writing the buffer", or more commonly, "writing your file".
+
+>> $ vi [filename]
+[change the filename with the original filename and the bracket should not be typed. The $ is the shell prompt]
+
+#After the previous command it will open the file you can see in the left bottom corner there is somwthing written that normal. Normal is the default mode when you open vi or vim editor. There are mainly two modes, command mode and inser mode.You start out on command mode, where every keystroke represend a command and in insert mode everything you type becomes text in your file.
+#But now you are thinking of how to go into the two modes and how to switch command mode and how to exit
+>> shift + :
+[After giving this command you can see in the left bottom corner that your prompt is blinking and asking for command you can write ]
+
+>> q or q!(for forcefully exit)
+[After wrting q or q! click enter boom now you know nerd how to exit vi or vim editor. Open the file again ]
+
+>> i
+[now click on i boom you are in insert mode now type anything you want like some c code after writing now you want to save the changes and want to exit vim]
+
+>> ESC
+[Click on the esc button so you can exit the mode remember you can exit the mode by clicking on esc one or two time but you are not going to exit vim you can see you are in which mode in the left bottom corner]
+
+#just save the file
+>> w
+[wnter w in the command mode the file will be saved hureeeee]
+#Save file or exit
+>> wq or zz
+[Go to the command mode by shift and : and write wq or zz it will save the file and exit the vi or vim editor]
+
+#What if you want to wipe out all of the edits you have made in a session and then return to the original file?the command
+>> :e! ENTER
+[The command will return you to the last saved version of the file]
